@@ -1,0 +1,26 @@
+# CodeBook
+## Variables:
+
+traindata - all the numerical values of the research in the training set
+testdata - all the numerical values of the rewsearch in the test data
+X - merged numerical values of test and train data
+
+act_train_num - number assigned to a particluar activity in training set (eg: 1 was assigned for walking)
+act_test_num - number assigned to a particular activity in test set
+Y - merged data of act_train_num and act_test_num
+
+sub_train - number assigned to subject in the training set
+sub_test - number assigned for the subject in test set
+subject - merged data of sub_train and sub_test (combined the training and test subjects)
+
+f- all the features or labels for the data set 'X'
+features - converted f to character with the number of labels length
+
+mean_std - extracted the labels with mean and standard divation measurements
+act_lab - charcater lables of activity to be assigned to Y
+
+merged_data - merging the data X,Y, subjects to get one clean and tidy dataset
+avg_data - an independent tidy dataset created as per requirement which shows the average value of the each activity ion each subject.
+
+
+#run_analysis.R
