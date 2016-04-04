@@ -1,5 +1,15 @@
-# CodeBook
-## Variables:
+CodeBook:
+
+Source:
+A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Variables:
 
 traindata - all the numerical values of the research in the training set
 testdata - all the numerical values of the rewsearch in the test data
@@ -23,4 +33,12 @@ merged_data - merging the data X,Y, subjects to get one clean and tidy dataset
 avg_data - an independent tidy dataset created as per requirement which shows the average value of the each activity ion each subject.
 
 
-#run_analysis.R
+run_analysis.R:
+1. the data is downloaded into the system and the files are unzipped.
+2. the test and training data sets are called in R and merged with rbind. the so formed three datasets are: X,Y, and subjects
+3. features test file is loaded inot R and mean and standard deviation of the required labels were extracted and the respective 
+values from the numerical dataset 'X' was extracted (numericals associated with mean and standard deviation of required variables.
+4. activities_label dataset was loaded and was merged with Y to have charcater assigned instead of numerical values in Y.
+5. the data in X, Y and subject was merged to have one tidy dataset.
+6. As per requirement, another dataset was created which is independent of the merged data, and which shows the average values of each
+variable for each subject.
